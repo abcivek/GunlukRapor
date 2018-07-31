@@ -3,7 +3,7 @@ import bs4
 
 
 def havadurumu():
-    base_url = "https://www.havadurumu15gunluk.net/"
+    base_url = "https://www.havadurumu15gunluk.net/havadurumu/ankara-hava-durumu-15-gunluk.html"
     ana_response = requests.get(base_url)
     ana_soup = bs4.BeautifulSoup(ana_response.text, "html.parser")
     listem = ana_soup.find_all("strong")
