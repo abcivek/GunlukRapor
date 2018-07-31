@@ -3,7 +3,7 @@ import telegram
 import os
 
 def gonder():
-    threading.Timer(20.0, gonder).start()
+    threading.Timer(60.0*60, gonder).start()
     os.system("py gunluktakip.py")
     with open("takip.txt") as f:
         metin = f.read()
